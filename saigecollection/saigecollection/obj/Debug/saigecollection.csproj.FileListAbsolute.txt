@@ -1,0 +1,13 @@
+E:\程序\赛格机电采集\saigecollection\saigecollection\bin\Debug\saigecollection.exe.config
+E:\程序\赛格机电采集\saigecollection\saigecollection\bin\Debug\saigecollection.exe
+E:\程序\赛格机电采集\saigecollection\saigecollection\bin\Debug\saigecollection.pdb
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.csprojResolveAssemblyReference.cache
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.Form1.resources
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.Properties.Resources.resources
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.csproj.GenerateResource.Cache
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.exe
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.pdb
+E:\程序\赛格机电采集\saigecollection\saigecollection\bin\Debug\FileOperation.dll
+E:\程序\赛格机电采集\saigecollection\saigecollection\bin\Debug\FileOperation.pdb
+E:\程序\赛格机电采集\saigecollection\saigecollection\obj\Debug\saigecollection.mysqlconfig.resources
+E:\程序\赛格机电采集\saigecollection\saigecollection\bin\Debug\MySql.Data.dll
