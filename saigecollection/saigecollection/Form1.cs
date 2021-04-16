@@ -15,6 +15,7 @@ namespace saigecollection
     {
         public static IniFile inifile = new IniFile("C://databaseconfig.ini");
         public static bool connnection_is = false;
+        public static bool isscaning = false;
 
         public Form1()
         {
@@ -70,9 +71,6 @@ namespace saigecollection
                 comboBox_project.Items.Add(list[1].ToString());
             
             }
-
-
-
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -85,13 +83,28 @@ namespace saigecollection
             {
                 label_database_status.Text = "未连接上";
             }
+
+            if (isscaning == true)
+            {
+                dataGridView1.Enabled = false;
+                button_stop_collect.Enabled = true;
+                button_begin_collect.Enabled = false;
+            }
+            if(isscaning==false)
+            {
+                dataGridView1.Enabled = true;
+                button_stop_collect.Enabled = false;
+                button_begin_collect.Enabled = true;
+
+            }
+
         }
 
 
         private void Reflush_Device_Table()
         {
             dataGridView1.RowCount = 1;
-            dataGridView1.ColumnCount = 12;
+            dataGridView1.ColumnCount = 13;
 
             for (int i = 0; i < dataGridView1.ColumnCount;i++)
             {
@@ -101,7 +114,7 @@ namespace saigecollection
             {
                 string project_name = comboBox_project.Items[comboBox_project.SelectedIndex].ToString();
 
-                ArrayList device_list = Mysql.Get_Sql_Select_Return("select shebeiname,(select shebeizhongleiname from shebeizhongleitable where shebeizhongleitable.shebeizhongleiID=shebeizhongleiID),shebeidizhi,value1,value2,value3,value4,value5,value6,value7,value8,value9 from shebeitable where shebeixiangmuID=(select distinct xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
+                ArrayList device_list = Mysql.Get_Sql_Select_Return("select shebeiID, shebeiname,(select shebeizhongleiname from shebeizhongleitable where shebeizhongleitable.shebeizhongleiID=shebeizhongleiID),shebeidizhi,value1,value2,value3,value4,value5,value6,value7,value8,value9 from shebeitable where shebeixiangmuID=(select distinct xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
 
 
                 if (device_list.Count >= 1)
@@ -119,13 +132,7 @@ namespace saigecollection
 
 
                     }
-
-
-
-
                 }
-
-
             }
             catch { }
         }
@@ -133,6 +140,14 @@ namespace saigecollection
         private void comboBox_project_TextChanged(object sender, EventArgs e)
         {
             Reflush_Device_Table();
+        }
+
+        private void button_collect_config_Click(object sender, EventArgs e)
+        {
+            collector_config view = new collector_config();
+            DialogResult result = view.ShowDialog();
+
+
         }
 
        

@@ -13,10 +13,10 @@ namespace saigecollection
     public partial class mysqlconfig : Form
     {
 
-        public static string database_ip;
-        public static string database_name;
-        public static string username;
-        public static string password;
+        //public static string database_ip;
+        //public static string database_name;
+        //public static string username;
+        //public static string password;
         public mysqlconfig()
         {
             InitializeComponent();
