@@ -28,6 +28,13 @@ namespace saigecollection
         {
             Form1.inifile.IniWriteValue("collector", "ip", textBox_collector_ip.Text);
             Form1.inifile.IniWriteValue("collector", "port", textBox_port.Text);
+
+            this.DialogResult = DialogResult.OK;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
         }
 
         

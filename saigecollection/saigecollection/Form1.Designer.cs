@@ -39,10 +39,6 @@
             this.comboBox_project = new System.Windows.Forms.ComboBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button_begin_collect = new System.Windows.Forms.Button();
-            this.button_collect_config = new System.Windows.Forms.Button();
-            this.button_stop_collect = new System.Windows.Forms.Button();
-            this.button_reflush = new System.Windows.Forms.Button();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,9 +52,16 @@
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button_begin_collect = new System.Windows.Forms.Button();
+            this.button_collect_config = new System.Windows.Forms.Button();
+            this.button_stop_collect = new System.Windows.Forms.Button();
+            this.button_reflush = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label_device_connect = new System.Windows.Forms.Label();
             this.button_connect = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.label_connect_info = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -153,43 +156,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1145, 376);
             this.dataGridView1.TabIndex = 6;
             // 
-            // button_begin_collect
-            // 
-            this.button_begin_collect.Location = new System.Drawing.Point(941, 53);
-            this.button_begin_collect.Name = "button_begin_collect";
-            this.button_begin_collect.Size = new System.Drawing.Size(75, 23);
-            this.button_begin_collect.TabIndex = 7;
-            this.button_begin_collect.Text = "开始采集";
-            this.button_begin_collect.UseVisualStyleBackColor = true;
-            // 
-            // button_collect_config
-            // 
-            this.button_collect_config.Location = new System.Drawing.Point(677, 25);
-            this.button_collect_config.Name = "button_collect_config";
-            this.button_collect_config.Size = new System.Drawing.Size(92, 23);
-            this.button_collect_config.TabIndex = 8;
-            this.button_collect_config.Text = "采集设备设定";
-            this.button_collect_config.UseVisualStyleBackColor = true;
-            this.button_collect_config.Click += new System.EventHandler(this.button_collect_config_Click);
-            // 
-            // button_stop_collect
-            // 
-            this.button_stop_collect.Location = new System.Drawing.Point(941, 99);
-            this.button_stop_collect.Name = "button_stop_collect";
-            this.button_stop_collect.Size = new System.Drawing.Size(75, 23);
-            this.button_stop_collect.TabIndex = 9;
-            this.button_stop_collect.Text = "停止采集";
-            this.button_stop_collect.UseVisualStyleBackColor = true;
-            // 
-            // button_reflush
-            // 
-            this.button_reflush.Location = new System.Drawing.Point(1031, 99);
-            this.button_reflush.Name = "button_reflush";
-            this.button_reflush.Size = new System.Drawing.Size(75, 23);
-            this.button_reflush.TabIndex = 10;
-            this.button_reflush.Text = "刷新";
-            this.button_reflush.UseVisualStyleBackColor = true;
-            // 
             // Column13
             // 
             this.Column13.HeaderText = "设备ID";
@@ -255,6 +221,45 @@
             this.Column11.HeaderText = "值9";
             this.Column11.Name = "Column11";
             // 
+            // button_begin_collect
+            // 
+            this.button_begin_collect.Location = new System.Drawing.Point(941, 53);
+            this.button_begin_collect.Name = "button_begin_collect";
+            this.button_begin_collect.Size = new System.Drawing.Size(75, 23);
+            this.button_begin_collect.TabIndex = 7;
+            this.button_begin_collect.Text = "开始采集";
+            this.button_begin_collect.UseVisualStyleBackColor = true;
+            this.button_begin_collect.Click += new System.EventHandler(this.button_begin_collect_Click);
+            // 
+            // button_collect_config
+            // 
+            this.button_collect_config.Location = new System.Drawing.Point(677, 25);
+            this.button_collect_config.Name = "button_collect_config";
+            this.button_collect_config.Size = new System.Drawing.Size(92, 23);
+            this.button_collect_config.TabIndex = 8;
+            this.button_collect_config.Text = "采集设备设定";
+            this.button_collect_config.UseVisualStyleBackColor = true;
+            this.button_collect_config.Click += new System.EventHandler(this.button_collect_config_Click);
+            // 
+            // button_stop_collect
+            // 
+            this.button_stop_collect.Location = new System.Drawing.Point(941, 99);
+            this.button_stop_collect.Name = "button_stop_collect";
+            this.button_stop_collect.Size = new System.Drawing.Size(75, 23);
+            this.button_stop_collect.TabIndex = 9;
+            this.button_stop_collect.Text = "停止采集";
+            this.button_stop_collect.UseVisualStyleBackColor = true;
+            this.button_stop_collect.Click += new System.EventHandler(this.button_stop_collect_Click);
+            // 
+            // button_reflush
+            // 
+            this.button_reflush.Location = new System.Drawing.Point(1031, 99);
+            this.button_reflush.Name = "button_reflush";
+            this.button_reflush.Size = new System.Drawing.Size(75, 23);
+            this.button_reflush.TabIndex = 10;
+            this.button_reflush.Text = "刷新";
+            this.button_reflush.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -281,12 +286,33 @@
             this.button_connect.TabIndex = 13;
             this.button_connect.Text = "连接";
             this.button_connect.UseVisualStyleBackColor = true;
+            this.button_connect.Click += new System.EventHandler(this.button_connect_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // label_connect_info
+            // 
+            this.label_connect_info.AutoSize = true;
+            this.label_connect_info.Location = new System.Drawing.Point(12, 599);
+            this.label_connect_info.Name = "label_connect_info";
+            this.label_connect_info.Size = new System.Drawing.Size(41, 12);
+            this.label_connect_info.TabIndex = 14;
+            this.label_connect_info.Text = "label4";
+            // 
+            // timer3
+            // 
+            this.timer3.Enabled = true;
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1168, 538);
+            this.ClientSize = new System.Drawing.Size(1168, 678);
+            this.Controls.Add(this.label_connect_info);
             this.Controls.Add(this.button_connect);
             this.Controls.Add(this.label_device_connect);
             this.Controls.Add(this.label3);
@@ -342,6 +368,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_device_connect;
         private System.Windows.Forms.Button button_connect;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label label_connect_info;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 

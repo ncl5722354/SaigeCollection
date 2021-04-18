@@ -1,0 +1,208 @@
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\Function_Base\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\Function_Base\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\Function_Base\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\Function_Base 2017 12 16\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\Function_Base\User_Function_Base\Communication\bin\Debug\Communication.dll.config
+D:\User_Function_Base\Communication\bin\Debug\Communication.dll.config
+D:\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.dll.config
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\Communication.tlb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\String_Caozuo.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\bin\Debug\String_Caozuo.pdb
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\obj\Debug\Communication.dll
+D:\赛格展示软件\User_Function_Base_final\User_Function_Base\Communication\obj\Debug\Communication.pdb
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.tlb
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.tlb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb
+D:\程序\染机项目文件\染机项目文件\项目文件\上位机软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\深圳软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\深圳软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\深圳软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll.config
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\Communication.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\bin\Debug\String_Caozuo.pdb
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.dll
+D:\深圳软件\深圳项目 2018 11 1\深圳软件\染机上位机控制软件V4.0\Communication\obj\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\bin\Debug\Communication.dll.config
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\bin\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\bin\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\bin\Debug\Communication.tlb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\obj\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\Ranji2019\染机上位机控制软件2019\Communication\obj\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\bin\Debug\Communication.dll.config
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\bin\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\bin\Debug\Communication.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\bin\Debug\Communication.tlb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\obj\Debug\Communication.dll
+D:\程序\染机上位机监控管理软件2019 V1.0\染机上位机控制软件2019 2018 11 07\染机上位机控制软件2019\Communication\obj\Debug\Communication.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\bin\Debug\Communication.dll.config
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\bin\Debug\Communication.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\bin\Debug\Communication.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\obj\Debug\Communication.dll
+D:\程序\鞍山数据传输程序\染机上位机控制软件2019 2018 11 9\Communication\obj\Debug\Communication.pdb
+D:\程序\预警系统\Communication\bin\Debug\Communication.dll.config
+D:\程序\预警系统\Communication\bin\Debug\Communication.dll
+D:\程序\预警系统\Communication\bin\Debug\Communication.pdb
+D:\程序\预警系统\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\预警系统\Communication\obj\Debug\Communication.dll
+D:\程序\预警系统\Communication\obj\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\Communication\bin\Debug\Communication.dll.config
+D:\程序\预警系统新版\预警系统\Communication\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\Communication\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\Communication\obj\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\Communication\obj\Debug\Communication.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Communication\bin\Debug\Communication.dll.config
+D:\程序\预警系统 2019 1 10\预警系统\Communication\bin\Debug\Communication.dll
+D:\程序\预警系统 2019 1 10\预警系统\Communication\bin\Debug\Communication.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统 2019 1 10\预警系统\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统 2019 1 10\预警系统\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\预警系统 2019 1 10\预警系统\Communication\obj\Debug\Communication.dll
+D:\程序\预警系统 2019 1 10\预警系统\Communication\obj\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Communication\bin\Debug\Communication.dll.config
+D:\程序\预警系统新版\预警系统\预警系统\Communication\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\预警系统\Communication\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Communication\bin\Debug\Communication.tlb
+D:\程序\预警系统新版\预警系统\预警系统\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统\预警系统\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统\预警系统\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\预警系统\Communication\obj\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统\预警系统\Communication\obj\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\bin\Debug\Communication.dll.config
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\bin\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\bin\Debug\Communication.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\bin\Debug\Communication.tlb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\obj\Debug\Communication.dll
+D:\程序\预警系统新版\预警系统2019 03 17\预警系统\Communication\obj\Debug\Communication.pdb
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll.config
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll
+D:\程序\warningsystem\Communication\bin\Debug\Communication.pdb
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll.CodeAnalysisLog.xml
+D:\程序\warningsystem\Communication\bin\Debug\Communication.dll.lastcodeanalysissucceeded
+D:\程序\warningsystem\Communication\bin\Debug\Communication.tlb
+D:\程序\warningsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\warningsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\warningsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\warningsystem\Communication\obj\Debug\Communication.dll
+D:\程序\warningsystem\Communication\obj\Debug\Communication.pdb
+D:\warningsystem\Communication\bin\Debug\Communication.dll.config
+D:\warningsystem\Communication\bin\Debug\Communication.dll
+D:\warningsystem\Communication\bin\Debug\Communication.pdb
+D:\warningsystem\Communication\bin\Debug\Communication.tlb
+D:\warningsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\warningsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\warningsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\warningsystem\Communication\obj\Debug\Communication.dll
+D:\warningsystem\Communication\obj\Debug\Communication.pdb
+D:\程序\深圳项目\WarningSystem-master\Communication\bin\Debug\Communication.dll.config
+D:\程序\深圳项目\WarningSystem-master\Communication\bin\Debug\Communication.dll
+D:\程序\深圳项目\WarningSystem-master\Communication\bin\Debug\Communication.pdb
+D:\程序\深圳项目\WarningSystem-master\Communication\bin\Debug\String_Caozuo.dll
+D:\程序\深圳项目\WarningSystem-master\Communication\bin\Debug\String_Caozuo.pdb
+D:\程序\深圳项目\WarningSystem-master\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\程序\深圳项目\WarningSystem-master\Communication\obj\Debug\Communication.dll
+D:\程序\深圳项目\WarningSystem-master\Communication\obj\Debug\Communication.pdb
+D:\程序\深圳项目\WarningSystem-master\Communication\bin\Debug\Communication.tlb
+D:\huizhou_newsystem\Communication\bin\Debug\Communication.dll.config
+D:\huizhou_newsystem\Communication\bin\Debug\Communication.dll
+D:\huizhou_newsystem\Communication\bin\Debug\Communication.pdb
+D:\huizhou_newsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\huizhou_newsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\huizhou_newsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\huizhou_newsystem\Communication\obj\Debug\Communication.dll
+D:\huizhou_newsystem\Communication\obj\Debug\Communication.pdb
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\bin\Debug\Communication.dll.config
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\bin\Debug\Communication.dll
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\bin\Debug\Communication.pdb
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\obj\Debug\Communication.dll
+D:\nichenglong\huizhou\huizhou_newsystem\Communication\obj\Debug\Communication.pdb
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\Communication.dll.config
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\Communication.dll
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\Communication.pdb
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\String_Caozuo.dll
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\String_Caozuo.pdb
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\obj\Debug\Communication.dll
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\obj\Debug\Communication.pdb
+D:\nichenglong\huizhou1\huizhou_newsystem\Communication\bin\Debug\Communication.tlb
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\obj\Debug\Communication.csprojResolveAssemblyReference.cache
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\obj\Debug\Communication.dll
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\obj\Debug\Communication.pdb
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\bin\Debug\Communication.dll.config
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\bin\Debug\Communication.dll
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\bin\Debug\Communication.pdb
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\bin\Debug\Communication.tlb
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\bin\Debug\String_Caozuo.dll
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\Communication\bin\Debug\String_Caozuo.pdb

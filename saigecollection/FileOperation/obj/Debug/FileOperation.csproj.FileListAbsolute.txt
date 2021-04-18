@@ -183,3 +183,9 @@ E:\程序\赛格机电采集\saigecollection\FileOperation\obj\Debug\FileOperati
 E:\程序\赛格机电采集\saigecollection\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
 E:\程序\赛格机电采集\saigecollection\FileOperation\obj\Debug\FileOperation.dll
 E:\程序\赛格机电采集\saigecollection\FileOperation\obj\Debug\FileOperation.pdb
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\FileOperation\bin\Debug\FileOperation.dll
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\FileOperation\bin\Debug\FileOperation.pdb
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\FileOperation\obj\Debug\FileOperation.csprojResolveAssemblyReference.cache
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\FileOperation\obj\Debug\FileOperation.csproj.ResolveComReference.cache
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\FileOperation\obj\Debug\FileOperation.dll
+D:\nichenglong\程序\程序\赛格后台\赛格机电管控平台采集软件\SaigeCollection\saigecollection\FileOperation\obj\Debug\FileOperation.pdb
