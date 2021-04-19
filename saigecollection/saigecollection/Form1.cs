@@ -360,22 +360,22 @@ namespace saigecollection
                 if (connect_value_name == "正泰电表电压")
                 {
                     byte[] Ua_bytes = new byte[4];
-                    Ua_bytes[0] = client1.receive_byte[31];
+                    Ua_bytes[0] = client1.receive_byte[33];
                     Ua_bytes[1] = client1.receive_byte[32];
-                    Ua_bytes[2] = client1.receive_byte[29];
+                    Ua_bytes[2] = client1.receive_byte[31];
                     Ua_bytes[3] = client1.receive_byte[30];
 
 
                     byte[] Ub_bytes = new byte[4];
-                    Ub_bytes[0] = client1.receive_byte[35];
+                    Ub_bytes[0] = client1.receive_byte[37];
                     Ub_bytes[1] = client1.receive_byte[36];
-                    Ub_bytes[2] = client1.receive_byte[33];
+                    Ub_bytes[2] = client1.receive_byte[35];
                     Ub_bytes[3] = client1.receive_byte[34];
 
                     byte[] Uc_bytes = new byte[4];
-                    Uc_bytes[0] = client1.receive_byte[39];
+                    Uc_bytes[0] = client1.receive_byte[41];
                     Uc_bytes[1] = client1.receive_byte[40];
-                    Uc_bytes[2] = client1.receive_byte[37];
+                    Uc_bytes[2] = client1.receive_byte[39];
                     Uc_bytes[3] = client1.receive_byte[38];
 
 
@@ -391,23 +391,23 @@ namespace saigecollection
                 if (connect_value_name == "正泰电表电流")
                 {
                     byte[] Ia_bytes = new byte[4];
-                    Ia_bytes[0] = client1.receive_byte[32];
-                    Ia_bytes[1] = client1.receive_byte[33];
-                    Ia_bytes[2] = client1.receive_byte[30];
-                    Ia_bytes[3] = client1.receive_byte[31];
+                    Ia_bytes[0] = client1.receive_byte[33];
+                    Ia_bytes[1] = client1.receive_byte[32];
+                    Ia_bytes[2] = client1.receive_byte[31];
+                    Ia_bytes[3] = client1.receive_byte[30];
 
 
                     byte[] Ib_bytes = new byte[4];
-                    Ib_bytes[0] = client1.receive_byte[36];
-                    Ib_bytes[1] = client1.receive_byte[37];
-                    Ib_bytes[2] = client1.receive_byte[34];
-                    Ib_bytes[3] = client1.receive_byte[35];
+                    Ib_bytes[0] = client1.receive_byte[37];
+                    Ib_bytes[1] = client1.receive_byte[36];
+                    Ib_bytes[2] = client1.receive_byte[35];
+                    Ib_bytes[3] = client1.receive_byte[34];
 
                     byte[] Ic_bytes = new byte[4];
-                    Ic_bytes[0] = client1.receive_byte[40];
-                    Ic_bytes[1] = client1.receive_byte[41];
-                    Ic_bytes[2] = client1.receive_byte[38];
-                    Ic_bytes[3] = client1.receive_byte[39];
+                    Ic_bytes[0] = client1.receive_byte[41];
+                    Ic_bytes[1] = client1.receive_byte[40];
+                    Ic_bytes[2] = client1.receive_byte[39];
+                    Ic_bytes[3] = client1.receive_byte[38];
 
 
                     float Ia = BitConverter.ToSingle(Ia_bytes, 0) / 10;
@@ -423,10 +423,10 @@ namespace saigecollection
                 if (connect_value_name == "合相有功功率")
                 {
                     byte[] power_bytes = new byte[4];
-                    power_bytes[0] = client1.receive_byte[32];
-                    power_bytes[1] = client1.receive_byte[33];
-                    power_bytes[2] = client1.receive_byte[30];
-                    power_bytes[3] = client1.receive_byte[31];
+                    power_bytes[0] = client1.receive_byte[33];
+                    power_bytes[1] = client1.receive_byte[32];
+                    power_bytes[2] = client1.receive_byte[31];
+                    power_bytes[3] = client1.receive_byte[30];
 
                     float power = BitConverter.ToSingle(power_bytes, 0);
 
@@ -452,10 +452,10 @@ namespace saigecollection
                 if (connect_value_name == "正向有功总电能")
                 {
                     byte[] Total_positive_active_energy_bytes = new byte[4];
-                    Total_positive_active_energy_bytes[0] = client1.receive_byte[32];
-                    Total_positive_active_energy_bytes[1] = client1.receive_byte[33];
-                    Total_positive_active_energy_bytes[2] = client1.receive_byte[30];
-                    Total_positive_active_energy_bytes[3] = client1.receive_byte[31];
+                    Total_positive_active_energy_bytes[0] = client1.receive_byte[33];
+                    Total_positive_active_energy_bytes[1] = client1.receive_byte[32];
+                    Total_positive_active_energy_bytes[2] = client1.receive_byte[31];
+                    Total_positive_active_energy_bytes[3] = client1.receive_byte[30];
 
                     float Total_positive_active_energy = BitConverter.ToSingle(Total_positive_active_energy_bytes, 0);
                     reslut_value = Total_positive_active_energy.ToString();
