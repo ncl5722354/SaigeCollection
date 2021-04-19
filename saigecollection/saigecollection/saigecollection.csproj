@@ -103,6 +103,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Communication\Communication.csproj">
+      <Project>{34d706df-dff9-43fd-ab56-6be52d53a671}</Project>
+      <Name>Communication</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FileOperation\FileOperation.csproj">
       <Project>{9ed43ee0-8a99-4c7d-bbac-464573da4dd9}</Project>
       <Name>FileOperation</Name>

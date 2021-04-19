@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "saigecollection", "saigecol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOperation", "FileOperation\FileOperation.csproj", "{9ED43EE0-8A99-4C7D-BBAC-464573DA4DD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Communication", "Communication\Communication.csproj", "{34D706DF-DFF9-43FD-AB56-6BE52D53A671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "String_Caozuo", "String_Caozuo\String_Caozuo.csproj", "{200DF22A-670B-410B-9887-4D43ABF185F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{9ED43EE0-8A99-4C7D-BBAC-464573DA4DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ED43EE0-8A99-4C7D-BBAC-464573DA4DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ED43EE0-8A99-4C7D-BBAC-464573DA4DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D706DF-DFF9-43FD-AB56-6BE52D53A671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D706DF-DFF9-43FD-AB56-6BE52D53A671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D706DF-DFF9-43FD-AB56-6BE52D53A671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D706DF-DFF9-43FD-AB56-6BE52D53A671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{200DF22A-670B-410B-9887-4D43ABF185F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{200DF22A-670B-410B-9887-4D43ABF185F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{200DF22A-670B-410B-9887-4D43ABF185F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{200DF22A-670B-410B-9887-4D43ABF185F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

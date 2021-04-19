@@ -1,0 +1,8 @@
+D:\程序\预警系统新版\预警系统\Communication\bin\Release\Communication.dll.config
+D:\程序\预警系统新版\预警系统\Communication\bin\Release\Communication.dll
+D:\程序\预警系统新版\预警系统\Communication\bin\Release\Communication.pdb
+D:\程序\预警系统新版\预警系统\Communication\bin\Release\String_Caozuo.dll
+D:\程序\预警系统新版\预警系统\Communication\bin\Release\String_Caozuo.pdb
+D:\程序\预警系统新版\预警系统\Communication\obj\Release\Communication.csprojResolveAssemblyReference.cache
+D:\程序\预警系统新版\预警系统\Communication\obj\Release\Communication.dll
+D:\程序\预警系统新版\预警系统\Communication\obj\Release\Communication.pdb
