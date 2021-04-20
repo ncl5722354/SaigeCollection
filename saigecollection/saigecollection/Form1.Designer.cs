@@ -37,7 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox_project = new System.Windows.Forms.ComboBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_status = new System.Windows.Forms.Timer(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,9 +59,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label_device_connect = new System.Windows.Forms.Label();
             this.button_connect = new System.Windows.Forms.Button();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer_connect = new System.Windows.Forms.Timer(this.components);
             this.label_connect_info = new System.Windows.Forms.Label();
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.timer_info_update = new System.Windows.Forms.Timer(this.components);
+            this.timer_project_online = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +122,7 @@
             // 
             // comboBox_project
             // 
+            this.comboBox_project.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_project.FormattingEnabled = true;
             this.comboBox_project.Location = new System.Drawing.Point(116, 85);
             this.comboBox_project.Name = "comboBox_project";
@@ -128,10 +130,10 @@
             this.comboBox_project.TabIndex = 5;
             this.comboBox_project.TextChanged += new System.EventHandler(this.comboBox_project_TextChanged);
             // 
-            // timer1
+            // timer_status
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer_status.Enabled = true;
+            this.timer_status.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // dataGridView1
             // 
@@ -289,10 +291,10 @@
             this.button_connect.UseVisualStyleBackColor = true;
             this.button_connect.Click += new System.EventHandler(this.button_connect_Click);
             // 
-            // timer2
+            // timer_connect
             // 
-            this.timer2.Enabled = true;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.timer_connect.Enabled = true;
+            this.timer_connect.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // label_connect_info
             // 
@@ -303,10 +305,16 @@
             this.label_connect_info.TabIndex = 14;
             this.label_connect_info.Text = "label4";
             // 
-            // timer3
+            // timer_info_update
             // 
-            this.timer3.Enabled = true;
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            this.timer_info_update.Enabled = true;
+            this.timer_info_update.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // timer_project_online
+            // 
+            this.timer_project_online.Enabled = true;
+            this.timer_project_online.Interval = 20000;
+            this.timer_project_online.Tick += new System.EventHandler(this.timer_project_online_Tick);
             // 
             // Form1
             // 
@@ -347,7 +355,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox_project;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer_status;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button_begin_collect;
         private System.Windows.Forms.Button button_collect_config;
@@ -369,9 +377,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_device_connect;
         private System.Windows.Forms.Button button_connect;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer_connect;
         private System.Windows.Forms.Label label_connect_info;
-        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer timer_info_update;
+        private System.Windows.Forms.Timer timer_project_online;
     }
 }
 

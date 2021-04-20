@@ -488,6 +488,13 @@ namespace saigecollection
                 {
                     Mysql.Ex_Sql("update shebeitable set value" + (connect_value_num + 1).ToString() + "=\"" + reslut_value + "\" where shebeiID=\"" + connect_device_id + "\"");
                     
+
+                    // 在value10里写入消息来到的时间
+
+                    Mysql.Ex_Sql("update shebeitable set value10=\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\" where shebeiID=\"" + connect_device_id + "\"");
+
+                    // 写入历史库
+                    Mysql.Ex_Sql("insert into history_save values(\"" + connect_device_id + "\",(select canshutypeid from canshutable where canshutype=\"" + connect_value_name + "\"),\"" + reslut_value + "\",\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\")");
                 }
                 catch { }
 
@@ -546,9 +553,22 @@ namespace saigecollection
         {
             // 刷新表格
 
-
             Reflush_Device_Table();
 
+        }
+
+        private void timer_project_online_Tick(object sender, EventArgs e)
+        {
+            if (comboBox_project.Text == "") return;
+
+
+            if (isscaning == false) return;
+            string project_name=comboBox_project.Text;
+
+            Mysql.Ex_Sql("insert into project_online values(( select xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\"),\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\")");
+
+
+            Mysql.Ex_Sql("update project_online set onlinetime=\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\" where ProjectID= ( select xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
         }
 
        

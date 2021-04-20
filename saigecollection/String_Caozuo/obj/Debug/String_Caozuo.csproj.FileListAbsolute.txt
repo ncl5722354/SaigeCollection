@@ -181,3 +181,9 @@ D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\obj\Debug\String_Caozuo.
 D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\obj\Debug\String_Caozuo.pdb
 D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\bin\Debug\String_Caozuo.tlb
 D:\nichenglong\huizhou1\huizhou_newsystem\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序\赛格机电采集\saigecollection\String_Caozuo\bin\Debug\String_Caozuo.dll
+E:\程序\赛格机电采集\saigecollection\String_Caozuo\bin\Debug\String_Caozuo.pdb
+E:\程序\赛格机电采集\saigecollection\String_Caozuo\bin\Debug\String_Caozuo.tlb
+E:\程序\赛格机电采集\saigecollection\String_Caozuo\obj\Debug\String_Caozuo.csprojResolveAssemblyReference.cache
+E:\程序\赛格机电采集\saigecollection\String_Caozuo\obj\Debug\String_Caozuo.dll
+E:\程序\赛格机电采集\saigecollection\String_Caozuo\obj\Debug\String_Caozuo.pdb
