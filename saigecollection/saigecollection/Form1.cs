@@ -30,7 +30,7 @@ namespace saigecollection
         public static int connect_value_num = 0;          // 现在通讯的变量号
         public static string connect_value_name = "";     // 现在通讯的变量名称
         public static int time_count = 0;                 // 过时计时
-        public static int time_out = 10;                  // 过时计时计数量
+        public static int time_out = 20;                  // 过时计时计数量
         public static bool send_is = false;               // 是否发送了数据
         public static bool receive_is = false;            // 是否接收了数据
         public static string show_text = "";
@@ -145,14 +145,14 @@ namespace saigecollection
             }
 
 
-            if (isscaning == false)
-            {
-                button_reflush.Enabled = true;
-            }
-            if (isscaning == true)
-            {
-                button_reflush.Enabled = false;
-            }
+            //if (isscaning == false)
+            //{
+            //    button_reflush.Enabled = true;
+            //}
+            //if (isscaning == true)
+            //{
+            //    button_reflush.Enabled = false;
+            //}
         }
 
 
@@ -227,23 +227,32 @@ namespace saigecollection
 
             if (send_is == true)
             {
+                
                 time_count++;
 
                 if(time_count>=time_out)
                 {
                     // 超时
+                    send_is = false;
+                    time_count = 0;
                     connect_value_num++;
 
 
                     if (connect_value_num >= 9)
                     {
-                        connect_value_num = 0;
                         device_num++;
+                        connect_value_num = 0;
+                        if (device_num >= dataGridView1.RowCount)
+                        {
+                            device_num = 0;
+                            connect_value_num = 0;
+                        }
 
                     }
 
-                    time_count = 0;
-                    send_is = false;
+                   
+                  
+                    return;
                 }
             }
 
@@ -251,11 +260,8 @@ namespace saigecollection
 
             if (isscaning == true && send_is == false)
             {
-                if (device_num >= dataGridView1.RowCount)
-                {
-                    device_num = 0;
-                    connect_value_num = 0;
-                }
+                send_is = true;
+               
 
 
                 string device_address = dataGridView1[3, device_num].Value.ToString();   // 设备地址
@@ -271,7 +277,7 @@ namespace saigecollection
                 ArrayList list = (ArrayList)canshuzhongleilist[0];
 
 
-                send_is = true;
+                
                 time_count = 0;
 
                 connect_device_address = device_address;
@@ -410,9 +416,9 @@ namespace saigecollection
                     Ic_bytes[3] = client1.receive_byte[38];
 
 
-                    float Ia = BitConverter.ToSingle(Ia_bytes, 0) / 10;
-                    float Ib = BitConverter.ToSingle(Ib_bytes, 0) / 10;
-                    float Ic = BitConverter.ToSingle(Ic_bytes, 0) / 10;
+                    float Ia = BitConverter.ToSingle(Ia_bytes, 0)*50f*0.001f ;
+                    float Ib = BitConverter.ToSingle(Ib_bytes, 0) *50f*0.001f;
+                    float Ic = BitConverter.ToSingle(Ic_bytes, 0) *50f*0.001f;
 
                     reslut_value = Ia.ToString() + " " + Ib.ToString() + " " + Ic.ToString();
 
@@ -457,7 +463,7 @@ namespace saigecollection
                     Total_positive_active_energy_bytes[2] = client1.receive_byte[31];
                     Total_positive_active_energy_bytes[3] = client1.receive_byte[30];
 
-                    float Total_positive_active_energy = BitConverter.ToSingle(Total_positive_active_energy_bytes, 0);
+                    float Total_positive_active_energy = BitConverter.ToSingle(Total_positive_active_energy_bytes, 0) * 50f;
                     reslut_value = Total_positive_active_energy.ToString();
 
                     show_text = "正向有功总电能：" + reslut_value;
