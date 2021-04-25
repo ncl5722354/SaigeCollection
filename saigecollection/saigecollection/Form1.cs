@@ -30,7 +30,7 @@ namespace saigecollection
         public static int connect_value_num = 0;          // 现在通讯的变量号
         public static string connect_value_name = "";     // 现在通讯的变量名称
         public static int time_count = 0;                 // 过时计时
-        public static int time_out = 20;                  // 过时计时计数量
+        public static int time_out = 30;                  // 过时计时计数量
         public static bool send_is = false;               // 是否发送了数据
         public static bool receive_is = false;            // 是否接收了数据
         public static string show_text = "";
@@ -42,7 +42,7 @@ namespace saigecollection
         public Form1()
         {
             InitializeComponent();
-            CheckForIllegalCrossThreadCalls = false;                           // 关闭跨线程访问
+        //    CheckForIllegalCrossThreadCalls = false;                           // 关闭跨线程访问
             client1.receive += new EventHandler(Receive_Data);
         }
 
@@ -143,21 +143,7 @@ namespace saigecollection
             {
                 button_begin_collect.Enabled = false;
             }
-
-
-            //if (isscaning == false)
-            //{
-            //    button_reflush.Enabled = true;
-            //}
-            //if (isscaning == true)
-            //{
-            //    button_reflush.Enabled = false;
-            //}
         }
-
-
-
-
         private void Reflush_Device_Table()
         {
             dataGridView1.RowCount = 1;
@@ -240,8 +226,9 @@ namespace saigecollection
 
                     if (connect_value_num >= 9)
                     {
-                        device_num++;
                         connect_value_num = 0;
+                        device_num++;
+                        
                         if (device_num >= dataGridView1.RowCount)
                         {
                             device_num = 0;
@@ -508,16 +495,16 @@ namespace saigecollection
                 // 写入datagridview
                try
                {
-                   for(int i=0;i<dataGridView1.RowCount;i++)
-                   {
-                       string id = dataGridView1[0, i].Value.ToString();
+                   //for(int i=0;i<dataGridView1.RowCount;i++)
+                   //{
+                   //    string id = dataGridView1[0, i].Value.ToString();
 
-                       if(id==connect_device_id)
-                       {
-                           dataGridView1[connect_value_num + 4, i].Value = reslut_value;
-                           break;
-                       }
-                   }
+                   //    if(id==connect_device_id)
+                   //    {
+                   //        dataGridView1[connect_value_num + 4, i].Value = reslut_value;
+                   //        break;
+                   //    }
+                   //}
                }
                catch { }
                
@@ -576,6 +563,45 @@ namespace saigecollection
 
             Mysql.Ex_Sql("update project_online set onlinetime=\"" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\" where ProjectID= ( select xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            // 更新能源消耗情况  正泰电表能源消耗 value5
+           
+            string now_day=DateTime.Now.ToString("yyyy-MM-dd");
+            string now_day_start=now_day+" 00:00:00";
+            string now_day_end=now_day+" 23:59:59";
+
+            try
+            {
+
+                if (isscaning == true)
+                {
+                    ArrayList all_elect_devices_id = Mysql.Get_Sql_Select_Return("select shebeiID from shebeitable where shebeizhongleiID=(select shebeizhongleiID from shebeizhongleitable where shebeizhongleiname=\"正泰电表\")");
+                    
+                     foreach(ArrayList device_id_object in all_elect_devices_id)
+                     {
+                         string device_id = device_id_object[0].ToString();
+                         Mysql.Ex_Sql("insert into elect_device_energy_cost values(\"" + device_id + now_day + "\",\"" + device_id + "\",\"" + now_day + "\",(select max(value)-min(value) from history_save where value_id=(select canshutypeid from canshutable where canshutype=\"正向有功总电能\") and device_id=\"" + device_id + "\" and savetime>=\"" + now_day_start + "\" and savetime<=\"" + now_day_end + "\" ))");
+
+                         Mysql.Ex_Sql("update  elect_device_energy_cost set cost=(select max(value)-min(value) from history_save where value_id=(select canshutypeid from canshutable where canshutype=\"正向有功总电能\") and device_id=\"" + device_id + "\" and savetime>=\"" + now_day_start + "\" and savetime<=\"" + now_day_end + "\" ) where device_id=\"" + device_id + "\" and datetime=\"" + now_day + "\"");
+
+                     }
+                }
+
+                
+
+            }
+            catch { }
+        }
+
+
+
 
        
     }
