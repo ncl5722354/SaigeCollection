@@ -156,8 +156,11 @@ namespace saigecollection
             try
             {
                 string project_name = comboBox_project.Items[comboBox_project.SelectedIndex].ToString();
+                ArrayList device_list = Mysql.Get_Sql_Select_Return("select shebeiID, shebeiname,shebeizhongleiname,shebeidizhi,value1,value2,value3,value4,value5,value6,value7,value8,value9 from shebeitable join shebeizhongleitable on shebeizhongleitable.shebeizhongleiID=shebeitable.shebeizhongleiID where shebeixiangmuID=(select distinct xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
 
-                ArrayList device_list = Mysql.Get_Sql_Select_Return("select shebeiID, shebeiname,(select shebeizhongleiname from shebeizhongleitable where shebeizhongleitable.shebeizhongleiID=shebeizhongleiID),shebeidizhi,value1,value2,value3,value4,value5,value6,value7,value8,value9 from shebeitable where shebeixiangmuID=(select distinct xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
+                
+
+                //ArrayList device_list = Mysql.Get_Sql_Select_Return("select shebeiID, shebeiname,(select shebeizhongleiname from shebeizhongleitable where shebeizhongleitable.shebeizhongleiID=shebeizhongleiID),shebeidizhi,value1,value2,value3,value4,value5,value6,value7,value8,value9 from shebeitable where shebeixiangmuID=(select distinct xiangmuID from xiangmuguanlitable where xiangmuname=\"" + project_name + "\")");
 
 
                 if (device_list.Count >= 1)
@@ -250,14 +253,13 @@ namespace saigecollection
                 send_is = true;
                
 
-
                 string device_address = dataGridView1[3, device_num].Value.ToString();   // 设备地址
                 string device_id = dataGridView1[0, device_num].Value.ToString();        // 设备ID
                 string device_type = dataGridView1[2, device_num].Value.ToString();      // 设备类型
 
 
-
-                ArrayList canshuzhongleilist = Mysql.Get_Sql_Select_Return("SELECT (select canshutype from saigedatabase.canshutable where canshutypeid=canshu1zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu2zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu3zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu4zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu5zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu6zhongleiID) ,(select canshutype from saigedatabase.canshutable where canshutypeid=canshu7zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu8zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu9zhongleiID)  FROM saigedatabase.shebeizhongleitable");
+                ArrayList canshuzhongleilist = Mysql.Get_Sql_Select_Return("SELECT (select canshutype from saigedatabase.canshutable where canshutypeid=canshu1zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu2zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu3zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu4zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu5zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu6zhongleiID) ,(select canshutype from saigedatabase.canshutable where canshutypeid=canshu7zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu8zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu9zhongleiID)  FROM saigedatabase.shebeizhongleitable where shebeizhongleitable.shebeizhongleiname=\"" + device_type + "\"");
+                //ArrayList canshuzhongleilist = Mysql.Get_Sql_Select_Return("SELECT (select canshutype from saigedatabase.canshutable where canshutypeid=canshu1zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu2zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu3zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu4zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu5zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu6zhongleiID) ,(select canshutype from saigedatabase.canshutable where canshutypeid=canshu7zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu8zhongleiID),(select canshutype from saigedatabase.canshutable where canshutypeid=canshu9zhongleiID)  FROM saigedatabase.shebeizhongleitable");
 
                 if (canshuzhongleilist.Count == 0) return;
 
@@ -325,6 +327,11 @@ namespace saigecollection
             if (value_type == "电压互感器倍率")
             {
                 send_cmd = send_cmd + "0801030007000135CB";
+            }
+
+            if (value_type == "正泰三相电力温度")
+            {
+                send_cmd = send_cmd + "080103000D00039408";
             }
 
             client1.Send_Message(send_cmd);
@@ -471,6 +478,17 @@ namespace saigecollection
                     reslut_value = voltage_ratio.ToString();
 
                     show_text = "电压互感器倍数：" + reslut_value;
+                }
+
+                if (connect_value_name == "正泰三相电力温度")
+                {
+                    float temp1 = client1.receive_byte[30] * 256 + client1.receive_byte[31];
+                    float temp2 = client1.receive_byte[32] * 256 + client1.receive_byte[33];
+                    float temp3 = client1.receive_byte[34] * 256 + client1.receive_byte[35];
+
+                    reslut_value = (temp1 / 10).ToString() + " " + (temp2 / 10).ToString() + " " + (temp3 / 10).ToString();
+
+                    show_text = "正泰三相电力温度：" + reslut_value;
                 }
 
                 
