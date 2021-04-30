@@ -30,7 +30,7 @@ namespace saigecollection
         public static int connect_value_num = 0;          // 现在通讯的变量号
         public static string connect_value_name = "";     // 现在通讯的变量名称
         public static int time_count = 0;                 // 过时计时
-        public static int time_out = 30;                  // 过时计时计数量
+        public static int time_out = 10;                  // 过时计时计数量
         public static bool send_is = false;               // 是否发送了数据
         public static bool receive_is = false;            // 是否接收了数据
         public static string show_text = "";
@@ -334,6 +334,11 @@ namespace saigecollection
                 send_cmd = send_cmd + "080103000D00039408";
             }
 
+            if (value_type == "8位开关量")
+            {
+                send_cmd = send_cmd + "080102001000087809";
+            }
+
             client1.Send_Message(send_cmd);
 
 
@@ -489,6 +494,57 @@ namespace saigecollection
                     reslut_value = (temp1 / 10).ToString() + " " + (temp2 / 10).ToString() + " " + (temp3 / 10).ToString();
 
                     show_text = "正泰三相电力温度：" + reslut_value;
+                }
+
+                if (connect_value_name == "8位开关量")
+                {
+
+                    byte temp = client1.receive_byte[30];
+
+
+                    // 第一位
+                    //int bit1 = temp % 2;
+                    //int bit2 = (temp - bit1) % 4;
+
+                    ArrayList bit_list = new ArrayList();
+                    ArrayList bit_result=new ArrayList();
+
+                    for (int i = 1; i <= 8;i++)
+                    {
+                        int bit = (int)(temp % Math.Pow(2, i));
+                        temp = (byte)(temp - (int)(temp % Math.Pow(2, i)));
+
+                        bit_list.Add(bit);
+                    }
+
+
+                    for (int i = 0; i <= 7;i++)
+                    {
+                        if((int)bit_list[i]!=0)
+                        {
+                            bit_result.Add(1);
+                        }
+                        else
+                        {
+                            bit_result.Add(0);
+                        }
+                    }
+
+
+                        //reslut_value = bit1.ToString() + " " + bit2.ToString() + " " + bit3.ToString() + " " + bit4.ToString() + " " + bit5.ToString() + " " + bit6.ToString() + " " + bit7.ToString() + " " + bit8.ToString();
+                    for (int i = 0; i <= 7; i++)
+                    {
+                        if (i != 7)
+                        {
+                            reslut_value = reslut_value + bit_result[i].ToString() + " ";
+                        }
+                        if(i==7)
+                        {
+                            reslut_value = reslut_value + bit_result[i].ToString();
+                        }
+                    }
+
+                        show_text = "开关量为：" + reslut_value;
                 }
 
                 
