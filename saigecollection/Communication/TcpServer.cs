@@ -33,6 +33,7 @@ namespace Communication
 
         // 连接时的消息
         public string connect_info = "";                                    // 客户端连接上的时候的信息
+        public int REVEIVE_NUM;
 
         
         // 事件注册
@@ -146,6 +147,7 @@ namespace Communication
             {
                 byte[] receive_buffer = new byte[8192];
                 int receive_num = serverclient.client.Client.Receive(receive_buffer);
+                REVEIVE_NUM = receive_num;
                 
                 if (receive_num == 0)
                 {

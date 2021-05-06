@@ -339,6 +339,11 @@ namespace saigecollection
                 send_cmd = send_cmd + "080102001000087809";
             }
 
+            if (value_type == "4路模拟量采集")
+            {
+                send_cmd = send_cmd + "080103000C0004840A";
+            }
+
             client1.Send_Message(send_cmd);
 
 
@@ -347,6 +352,9 @@ namespace saigecollection
         void Receive_Data(object sender,EventArgs e)
         {
             string str = "";
+
+
+            if (client1.RECEIVE_NUM <= 30) return;
 
             for (int i = 0; i < 300; i++)
             {
@@ -358,10 +366,15 @@ namespace saigecollection
 
 
             // 检查数据的地址是否正确
+
+
             if (str.Substring(4, 16) == connect_device_address)
             {
 
                 string reslut_value = "";     // 写入某个数值 
+
+                // 三相电压采集
+                #region
                 if (connect_value_name == "正泰电表电压")
                 {
                     byte[] Ua_bytes = new byte[4];
@@ -393,6 +406,11 @@ namespace saigecollection
                     show_text = "电压a：" + Ua.ToString()+" 电压b："+Ub.ToString()+" 电压c:"+Uc.ToString();
                 }
 
+                #endregion
+
+
+                // 三相电流采集
+                #region
                 if (connect_value_name == "正泰电表电流")
                 {
                     byte[] Ia_bytes = new byte[4];
@@ -424,7 +442,11 @@ namespace saigecollection
                     show_text = "电流a：" + Ia.ToString() + " 电流b：" + Ib.ToString() + " 电流c:" + Ic.ToString();
                 }
 
+                #endregion
 
+
+                // 合相有功功率
+                #region
                 if (connect_value_name == "合相有功功率")
                 {
                     byte[] power_bytes = new byte[4];
@@ -439,7 +461,11 @@ namespace saigecollection
 
                     show_text = "合相有功功率：" + reslut_value;
                 }
+                #endregion
 
+
+                // 合相功率因数
+                #region
                 if (connect_value_name == "合相功率因数")
                 {
                     byte[] power_factor_bytes = new byte[4];
@@ -453,6 +479,11 @@ namespace saigecollection
 
                     show_text = "合相功率因数:" + reslut_value;
                 }
+
+                #endregion
+
+
+                
 
                 if (connect_value_name == "正向有功总电能")
                 {
@@ -545,6 +576,19 @@ namespace saigecollection
                     }
 
                         show_text = "开关量为：" + reslut_value;
+                }
+
+                // 4路模拟量采集
+                if (connect_value_name == "4路模拟量采集")
+                {
+                    int a = 0;
+                    int value1 = client1.receive_byte[36] * 256 + client1.receive_byte[37];
+                    int value2 = client1.receive_byte[34] * 256 + client1.receive_byte[35];
+                    int value3 = client1.receive_byte[32] * 256 + client1.receive_byte[33];
+                    int value4 = client1.receive_byte[30] * 256 + client1.receive_byte[31];
+
+                    reslut_value = value1.ToString() + " " + value2.ToString() + " " + value3.ToString() + " " + value4.ToString();
+                    show_text = "模拟量为：" + reslut_value;
                 }
 
                 

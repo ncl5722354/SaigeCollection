@@ -20,6 +20,7 @@ namespace Communication
 
         public event EventHandler disconnect;
         public event EventHandler receive;
+        public int RECEIVE_NUM;
         
         public ServerClient()
         {
@@ -94,6 +95,7 @@ namespace Communication
                     }
 
                     int receive_byte_num = client.Client.Receive(receive_byte);
+                    RECEIVE_NUM = receive_byte_num;
 
                     if(receive_byte_num>0)
                     {
